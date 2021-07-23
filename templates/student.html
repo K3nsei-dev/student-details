@@ -6,19 +6,17 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Student Records | LC Academy</title>
+    <link rel="shortcut icon" href="/static/LIFE-CHOICES-ICON-ON-GREEN.png" type="image" />
 </head>
-<body>
-<form action="http://localhost:5000/add-new-record/" method="post">
+<body style="height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: black" >
+<form style="display: flex; flex-direction: column; gap: 5px;" action="http://localhost:5000/add-new-record/" method="post">
+    <img src="/static/new-logo.jpg"><br>
      <h3>Student Information</h3>
-     Name<br>
-     <input type="text" name="name"><br>
-     Address<br>
-     <textarea name="add"></textarea><br>
-     City<br>
-     <input type="text" name="city"><br>
-     PINCODE<br>
-     <input type="text" name="pin"><br>
-     <input type="submit" value="submit"><br>
+     <input type="text" name="name" placeholder="Full Name" style="padding: 10px; font-size: 20px; text-align: center;"><br>
+     <textarea name="add" placeholder="Your Address" style="padding: 10px; font-size: 20px; text-align: center;"></textarea><br>
+     <input type="text" name="city" placeholder="Your City" style="padding: 10px; font-size: 20px; text-align: center;"><br>
+     <input type="text" name="pin" placeholder="City Code" style="padding: 10px; font-size: 20px; text-align: center;"><br>
+     <input style="border-radius: 50px; padding: 10px; font-size: 20px; text-transform: uppercase; background-color: #a7ce00; border-color: #a7ce00" type="submit" value="submit"><br>
 </form>
 </body>
 </html>

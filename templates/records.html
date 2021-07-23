@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Database Records</title>
+    <link rel="shortcut icon" href="/static/LIFE-CHOICES-ICON-ON-GREEN.png" type="image" />
 </head>
-<body>
+<body style="min-height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: black">
+<img src="/static/new-logo.jpg"><br>
    <h4>Records</h4>
-   <table>
+   <table style="color: #a7ce00; font-size: 25px; text-align: center;">
      <th>Name</th>
      <th>Address</th>
      <th>City</th>
-     <th>PINCODE</th>
+     <th>CODE</th>
      {% for record in records %}
        <tr>
          <td>{{ record[0] }}</td>
@@ -20,6 +22,6 @@
        </tr>
      {% endfor %}
    </table>
-    <h5><a href = "/enter-new/">enter new</a></h5>
+    <h5><a style="text-decoration: none; white-space: nowrap; background-color: #a7ce00; color: black; padding: 15px; border-radius: 50px; text-transform: uppercase; font-size: 20px;" href = "/enter-new/">enter new user</a></h5>
 </body>
 </html>

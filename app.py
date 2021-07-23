@@ -19,7 +19,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "This is the Home Page!"
+    return render_template('home.html')
 
 
 @app.route('/enter-new/')
@@ -40,7 +40,7 @@ def add_new_record():
                 cur = con.cursor()
                 cur.execute("INSERT INTO students (name, addr, city, pin) VALUES (?, ?, ?, ?)", (name, addr, city, pin))
                 con.commit()
-                msg = "Records successfully added"
+                msg = "Records Successfully Added"
         except Exception as e:
             con.rollback()
             msg = "Error occursed in insert option: " + str(e)
