@@ -7,21 +7,23 @@
 </head>
 <body style="min-height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: black">
 <img src="/static/new-logo.jpg"><br>
-   <h4>Records</h4>
-   <table style="color: #a7ce00; font-size: 25px; text-align: center;">
-     <th>Name</th>
-     <th>Address</th>
-     <th>City</th>
-     <th>CODE</th>
+<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 20px;">
+    <h4>Records</h4>
+   <table style="color: #a7ce00; font-size: 25px; text-align: center; border: 2px solid #a7ce00; padding: 20px; border-spacing: 20px; border-collapse: collapse;">
+     <th style="border: 2px solid #a7ce00; padding: 20px; border-collapse: collapse;">Name</th>
+     <th style="border: 2px solid #a7ce00; padding: 20px; border-collapse: collapse;">Address</th>
+     <th style="border: 2px solid #a7ce00; padding: 20px; border-collapse: collapse;">City</th>
+     <th style="border: 2px solid #a7ce00; padding: 20px; border-collapse: collapse;">CODE</th>
      {% for record in records %}
        <tr>
-         <td>{{ record[0] }}</td>
-         <td>{{ record[1] }}</td>
-         <td>{{ record[2] }}</td>
-         <td>{{ record[3] }}</td>
+         <td style="border: 2px solid #a7ce00; padding: 20px; border-collapse: collapse;">{{ record[0] }}</td>
+         <td style="border: 2px solid #a7ce00; padding: 20px; border-collapse: collapse;">{{ record[1] }}</td>
+         <td style="border: 2px solid #a7ce00; padding: 20px; border-collapse: collapse;">{{ record[2] }}</td>
+         <td style="border: 2px solid #a7ce00; padding: 20px; border-collapse: collapse;">{{ record[3] }}</td>
        </tr>
      {% endfor %}
    </table>
     <h5><a style="text-decoration: none; white-space: nowrap; background-color: #a7ce00; color: black; padding: 15px; border-radius: 50px; text-transform: uppercase; font-size: 20px;" href = "/enter-new/">enter new user</a></h5>
+</div>
 </body>
 </html>
